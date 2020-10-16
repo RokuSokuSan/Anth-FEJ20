@@ -1,0 +1,127 @@
+<!-- 
+    Du ska i denna laborationsuppgift göra följande:
+    I denna Labb ska du skapa ett inloggningsformulär som alltid ligger centrerat på sidan och anpassar sig efter skärmstorlek.
+    Du ska använda HTML och CSS för att lösa uppgiften och formuläret behöver inte ha någon funktionalitet, 
+    tänk på att använda rätt typ av input för det användaren ska skriva in. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+     <a class="navbar-brand text-info" href="index.html" ><i class="fas fa-wine-glass-alt fa-4x"></i> Badabing Badabong</a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNav">
+       <ul class="navbar-nav ml-auto">
+         <li class="nav-item">
+           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="landscape.html">Landscape</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="searchengine.html">Search</a>
+         </li>
+         <li class="nav-item">
+             <a class="nav-link" href="about.html">About</a>
+           </li>
+        <li class="nav-item">
+             <a class="nav-link active" href="login.html">Login/Register</a>
+        </li>
+       </ul>
+     </div>
+   </nav>
+   <section class="container rounded-corners item-form cust-grey">
+     <hr>
+    <p class="centrera-p h3">Logga in</p> 
+     <div class="container-form-item">
+       <div class="item-form">
+        <div class="form-row general-center">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+        </div>
+        <div class="form-row general-center">
+          <button type="submit" class="btn btn-primary">Let's go</button>
+      </div>
+  </div>
+  </div>
+   </section>
+   <section></section>
+        <div class="container rounded-corners item-form cust-grey">
+          <hr>
+          <p class="centrera-p h3">Eller Registrera konto</p>
+          <form class="item-form">
+            <div class="form-row general-center">
+              <div class="form-group col-md-4">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+            </div>
+            <div class="form-row general-center">
+            <div class="form-group col-md-4">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputZip">Postnr</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div></div>
+            <div class="form-row general-center">
+              <div class="form-group col-md-4">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>Nacka</option>
+                  <option>Älta</option>
+                  <option>Orminge</option>
+                  <option>Gustavsberg</option>
+                  <option>Finnberget</option>
+                  <option>Henriksdal</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class=" form-row general-center">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label ml-2" for="gridCheck">
+                  I consent to being under your scruteny!
+                </label>
+              </div>
+            </div>
+            <div class="form-row general-center">
+            <button type="submit" class="btn btn-warning">Create account</button>
+        </div>
+      </div>
+          </form>
+        </div>
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+    </html>

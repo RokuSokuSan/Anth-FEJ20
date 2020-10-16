@@ -1,0 +1,70 @@
+<!-- 
+    I denna laborationsuppgift ska du:
+    Med hjälp av HMTL och CSS skapa en scen/ ett landskap.
+    Temat på scenen ska vara vinter.
+    Du ska skapa former med hjälp av CSS och placera ut dessa där du vill ha dom,
+    jag vill alltså inte att dus ka ta färdigabilder och lägga in utan du ska tex, 
+    bygga en snögubbe själv med hjälp av cirklar. 
+    Till bakgrunden kan det vara ok att använda en bild, men det är plus i kanten om man bara använder css.
+    Det ska även falla snö på sidan.
+    Här kan du behöva använda saker som CSS animations, position absolute mm. 
+-->
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Snowfall</title>
+ 
+     <link rel="stylesheet" href="css/bootstrap.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+     <link rel="stylesheet" href="css/custom.css">
+     <link rel="stylesheet" href="css/snow.css">
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand text-info" href="index.html" ><i class="fas fa-wine-glass-alt fa-4x"></i> Badabing Badabong</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="landscape.html">Landscape</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="searchengine.html">Search</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+         <li class="nav-item">
+              <a class="nav-link" href="login.html">Login/Register</a>
+         </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="sky-section">
+        <div class="snow snow1"></div>
+        <div class="snow snow2"></div>
+        <div class="snow snow3"></div>
+    </section>
+    <div class="snowman">
+      <div class="snowman-head" id="head">0 0 <br/><</div>
+      <div class="snowman-torso" id="torso"></div>
+      <div class="snowman-butt" id="butt"></div>
+    </div>
+      <section class="snowy-section">
+        <div class="snow snow1"></div>
+        <div class="snow snow2"></div>
+        <div class="snow snow3"></div>
+      </section>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

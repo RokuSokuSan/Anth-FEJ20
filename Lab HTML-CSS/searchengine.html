@@ -1,0 +1,66 @@
+<!--
+    I denna laborationsuppgift ska du:
+    Med hjälp av HMTL och CSS skapa en kopia av www.google.se.
+    Här vill jag att du skapar startsidan, men även en sida med sökresultat. 
+    För att lägga in ikoner rekommenderar jag www.fontawesome.com 
+    Hittar du inte exakt samma ikoner så får du ta någonting liknande. 
+    Så länge du anser att dom har samma mening för användaren så att denne förstår vad som kommer hända när den trycker på dom.
+    Tänk på att sidan inte behöver ha någon funktionalitetutan det är det rent visuella som räknas här, 
+    för att länka ihop dina sökresultat med index sidan kan du använda dig av en <a> tagg.
+  -->
+  <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Bootstrap</title>
+ 
+     <link rel="stylesheet" href="css/bootstrap.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+     <link rel="stylesheet" href="css/custom.css">
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand text-info" href="index.html" ><i class="fas fa-wine-glass-alt fa-4x"></i> Badabing Badabong</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span><i class="fas fa-alien-monster"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="landscape.html">Landscape</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="searchengine.html">Search</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+         <li class="nav-item">
+              <a class="nav-link" href="login.html">Login/Register</a>
+         </li>
+        </ul>
+      </div>
+    </nav>
+<section class="container mt-5 ">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm rounded-corners general-center pt-4">
+      <a class="navbar-brand" href="index.html">
+        <i class="fas fa-wine-glass-alt fa-2x"></i>
+        Badabing Badabong
+      </a>
+      <form class="form-inline" action="https://google.com" target="_blank">
+        <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-info" type="submit"><i class="fas fa-search"></i></button>
+      </form>
+    </nav>
+    <p class="h5 mt-4 bg-warning pb-1 pl-2">This search-bar is under construction. If you don't get it right, it will go to google.com. NOT! MY FAULT!!</p>
+  </section>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+  </html>

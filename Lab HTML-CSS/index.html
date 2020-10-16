@@ -1,0 +1,72 @@
+<!-- 
+    I denna laborationsuppgift ska du:
+    Med hjälp av bootstrap skapa en hemsida. 
+    Sidan ska innehålla en landingpage, en about sida och en kontakt sida.
+    Det ska även gå att navigera mellan dessa med hjälp av en navigationsmeny.
+    Alla sidorna ska vara responsiva och anpassa sig efter den enhet användaren sitter vid.
+    Tänk på att designa med ett mobile first tänk.
+    Här handlar det mer om design än vad det faktiskt står på hemsidan.
+    Använd lorem för att fylla ut med text. 
+    Det finns färdiga komponenter på www.getbootstrap.com och det är helt ok att använda sig av dessa sålänge dom fyller sin funktion som avsett på sidan.
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Bootstrap</title>
+ 
+     <link rel="stylesheet" href="css/bootstrap.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+     <link rel="stylesheet" href="css/custom.css">
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand text-info" href="index.html" ><i class="fas fa-wine-glass-alt fa-4x"></i> Badabing Badabong</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="landscape.html">Landscape</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="searchengine.html">Search</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+         <li class="nav-item">
+              <a class="nav-link" href="login.html">Login/Register</a>
+         </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid bg-hero-image text-black">
+      <div class="container pt-4 pb-4">
+        <h1 class="mt-5">Bring it to the heavens!</h1>
+        <p class="">LÅTTEXT
+          Contact is all it takes
+          To change your life to lose your place in time
+          Contact! asleep or awake
+          Coming around you may wake up to find
+          Questions deep within your eyes,
+          Now more than ever you realize
+          </p>
+        <button class="btn btn-warning mt-4" onclick="window.location.href='tribute.html';">Eulogy to Eddie Van Halen</button>
+        
+    </div>
+    </div>
+<section>
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+ </body>
+ </html>
