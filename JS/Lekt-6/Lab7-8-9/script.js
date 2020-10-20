@@ -126,10 +126,16 @@ let sumOfcalc = calc(10, 15);
 console.log(sumOfcalc);
 
 // // Funktion 4:
-const tip = (summaAv = 0, procentAv = 0) => summaAv + summaAv* procentAv;
+// const tip = (summaAv = 0, procentAv = 0) => summaAv + summaAv * procentAv;
+
+// let total = tip(200,0.15);
+// console.log(total);
+// Labb med if
+
+const tip = (summaAv = 0, procentAv = 0) => summaAv + summaAv * procentAv;
+
+
 
 let total = tip(200,0.15);
 console.log(total);
-
-
 
