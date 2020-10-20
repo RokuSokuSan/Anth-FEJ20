@@ -25,3 +25,5 @@ const circle = (diameter=0) => diameter / 2;
 // själv söka information om hur du använder detta.
 // Tänk på att klockan ska uppdateras 1 gång i sekunden så att det alltid visar rätt!
 //
+const myDate = new Date();
+console.log(myDate)
