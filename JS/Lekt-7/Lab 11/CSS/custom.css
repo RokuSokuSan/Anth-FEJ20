@@ -32,7 +32,7 @@
     background-color: #92989e !important;
   }
 .bg-hero-image {
-    background-image: url("../img/IMG_20200906_164034\ \(2\).jpg"); background-size: cover;
+    background-color: azure;
 }
 .bg-tribute{
    background-size: cover;
@@ -95,4 +95,12 @@
   
   .bg-custom-2 {
   background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  }
+  .text-info-cust {
+    color: #17a2b8;
+    font-size: 3em;
+  }
+  
+  a.text-info-cust:hover, a.text-info:focus {
+    color: #0f6674;
   }
