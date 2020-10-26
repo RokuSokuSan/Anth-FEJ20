@@ -13,6 +13,22 @@
 // utan att man behöver skriva in alla igen. Tänk dock på att det bör gå att ta bort elever som kanske
 // inte längre går kvar på utbildningen.
 
-class Pupil (){
-    cons
+class Pupil {
+    constructor(firstN = '', lastN = '', eMail = ''){
+        this.firstName = firstN;
+        this.lastName = lastN;
+        this.ePost = eMail;
+    }
+    avtiveYesNo(){
+        this.firstName.lastName = true
+        console.log(`${this.firstName.lastName} Finns`)         
+    }
 }
+let pupils = new Pupil();
+console.log (pupils)
+// function timer() {
+//     const myTime = new Date();
+//     const time = myTime.toLocaleTimeString();
+//     document.getElementById("clock").innerHTML = myTime;
+//     // console.log(time)
+// };const p = document.getElementById("activePupil").innerHTML = Pupil;
